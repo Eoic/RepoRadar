@@ -1,0 +1,14 @@
+.git
+.env
+.env.*
+.coverage
+__pycache__
+*.pyc
+node_modules
+frontend/
+tests/
+*.md
+.ruff_cache
+.pytest_cache
+.github
+docker-compose.yml
