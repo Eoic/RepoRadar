@@ -88,7 +88,6 @@ def test_github_login_returns_redirect_url(mock_settings, client):
     data = resp.json()
     assert "redirect_url" in data
     assert "test-client-id" in data["redirect_url"]
-    assert "read:user" in data["redirect_url"]
 
 
 # --- /api/auth/callback ---

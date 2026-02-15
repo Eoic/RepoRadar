@@ -14,9 +14,7 @@ Search performs two parallel queries against Qdrant, then merges and re-ranks us
 ## Architecture
 
 ```text
-Frontend (React + Vite + TypeScript)
-  -> REST API ->
-Backend (FastAPI / Python 3.11+)
+Frontend (React + Vite + TypeScript) -> REST API -> Backend (FastAPI / Python 3.11+)
   ├── GitHub API Client (httpx)
   ├── Text Preprocessor (README cleaning, dependency extraction)
   ├── Embedding Service (sentence-transformers, 384d)

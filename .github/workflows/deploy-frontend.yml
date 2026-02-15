@@ -35,7 +35,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_API_URL: https://reporadar.onrender.com
+          VITE_API_URL: https://reporadar-osk3.onrender.com/
 
       - uses: actions/upload-pages-artifact@v3
         with:
