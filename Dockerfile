@@ -12,7 +12,7 @@ RUN mkdir -p app && touch app/__init__.py && \
 COPY app/ app/
 COPY scripts/ scripts/
 
-RUN addgroup --system app && adduser --system --ingroup app app
+RUN addgroup --system app && adduser --system --home /home/app --ingroup app app
 USER app
 
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
